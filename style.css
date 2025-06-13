@@ -1,0 +1,194 @@
+:root {
+    --primary-green: #39FF14;
+    --primary-yellow: #FFFF00;
+    --bg-lavender: #E0D9FF;
+    --text-dark: #000000;
+    --text-light: #FFFFFF;
+    --border-dark: #000000;
+    --font-heading: 'JetBrains Mono', monospace;
+    --font-body: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    background-color: var(--bg-lavender);
+    color: var(--text-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.site-container {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    border: 2px solid var(--border-dark);
+    box-shadow: 8px 8px 0px var(--border-dark);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid var(--border-dark);
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-bar {
+    border: 2px solid var(--border-dark);
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.header-right a { 
+    text-decoration: none; 
+    color: var(--text-dark); 
+    font-size: 1.5rem; 
+}
+
+/* Penyesuaian untuk Ikon Profil baru */
+.profile-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--border-dark);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem; /* Ukuran ikon disesuaikan */
+}
+/* Kode untuk img di dalam profile-icon dihapus karena tidak relevan lagi */
+
+.promo-banner {
+    background-color: var(--primary-green);
+    color: var(--text-dark);
+    text-align: center;
+    padding: 0.75rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.close-banner {
+    position: absolute;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.content-wrapper { padding: 2rem; }
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+.main-card {
+    display: flex;
+    gap: 2rem;
+    border: 2px solid var(--border-dark);
+    padding: 2rem;
+}
+
+.left-panel { flex: 2; }
+.left-panel h1 { font-family: var(--font-heading); font-size: 2.5rem; margin-top: 0; }
+.event-image img { width: 100%; object-fit: cover; border: 2px solid var(--border-dark); }
+.actions { margin-top: 1rem; font-size: 1.5rem; }
+.actions span { margin-right: 1rem; cursor: pointer; }
+.left-panel h2 { margin-top: 2rem; }
+
+.right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.price-section { font-size: 1.5rem; }
+.new-price { font-weight: 700; font-size: 2rem; }
+.old-price { text-decoration: line-through; color: #888; margin-left: 0.5rem; }
+.discount { background-color: var(--primary-green); padding: 0.2rem 0.5rem; font-weight: 700; margin-left: 0.5rem; }
+
+.cta-button {
+    background-color: var(--primary-yellow);
+    border: 2px solid var(--border-dark);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px var(--border-dark);
+    transition: all 0.2s;
+}
+.cta-button:hover {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+.cta-button:active {
+    background-color: #e0e000;
+}
+
+.offer-ends { text-align: center; }
+
+.info-icons {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border: 2px solid var(--border-dark);
+    padding: 1rem;
+}
+.icon-item small { font-size: 0.8rem; display: block; }
+.icon-bg {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 0 auto 0.5rem auto;
+}
+.calendar { background-color: #B2F5EA; }
+.computer { background-color: #BEE3F8; }
+.graduation { background-color: #FED7D7; }
+
+/* Penyesuaian untuk poster-info dan location */
+.location, .posted-by {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.poster-info {
+    display: flex;
+    align-items: center;
+    /* gap dihapus karena logo sudah tidak ada */
+}
+.location-pin { background-color: #FEEBC8; }
+.rating { margin-top: 0.5rem; }
