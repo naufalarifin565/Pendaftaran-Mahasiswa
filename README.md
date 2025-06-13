@@ -119,3 +119,6 @@ Server adalah otak dari aplikasi ini.
 2.  Buka File Explorer Anda.
 3.  Masuk ke folder `frontend`.
 4.  **Double-click** file `index.html`. Halaman web akan terbuka di browser Anda dan siap digunakan untuk mendaftar. Data yang Anda kirim akan tersimpan di database MySQL.
+
+## Tampilan di MySQL ![image](https://github.com/user-attachments/assets/75d5c57a-5eab-4011-9441-b19ca2730b3d)
+
