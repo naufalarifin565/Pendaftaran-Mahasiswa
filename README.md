@@ -2,6 +2,8 @@
 
 Ini adalah proyek aplikasi web full-stack sederhana yang dibangun untuk mensimulasikan proses pendaftaran mahasiswa baru. Proyek ini menampilkan halaman pendaftaran dengan desain yang terinspirasi dari gaya retro-modern, terhubung ke backend Node.js yang aman dan database MySQL untuk menyimpan data.
 
+## Link Deploy frontend: https://naufalarifin565.github.io/Pendaftaran-Mahasiswa/
+
 ## Teknologi yang Digunakan
 * **Frontend**:
     * HTML5
